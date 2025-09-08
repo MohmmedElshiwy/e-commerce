@@ -29,7 +29,7 @@ export default function HeartBtn({ product }: { product: ProductsType }) {
         }
       }
     } catch (err) {
-      toast.error(String(err));
+      toast.error(err ? "Login First": String(err) );
     }
   };
 

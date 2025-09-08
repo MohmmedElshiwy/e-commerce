@@ -37,7 +37,7 @@ export default function RootLayout({
             <Toaster position="top-center" duration={1500} />
 
             <Navbar />
-            <div className="w-11/12 mx-auto mt-10">{children}</div>
+            <div className="w-11/12 mx-auto mt-10 min-h-screen ">{children}</div>
             <Footer/>
           </CartProvider>
         </MySessionProvider>
