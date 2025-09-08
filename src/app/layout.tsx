@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import { Toaster } from "@/components/ui/sonner";
 import MySessionProvider from "@/MySessionProvider/MySessionProvider";
 import CartProvider from "@/context/CartContext";
+import Footer from "@/components/Footer/Footer";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
 
             <Navbar />
             <div className="w-11/12 mx-auto mt-10">{children}</div>
+            <Footer/>
           </CartProvider>
         </MySessionProvider>
       </body>
